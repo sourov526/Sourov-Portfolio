@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #01030f;
+  --foreground: #f8fafc;
+  --muted: #94a3b8;
+  --card: rgba(15, 23, 42, 0.6);
+  --accent: #38bdf8;
+}
+
+html.light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --muted: #475569;
+  --card: rgba(255, 255, 255, 0.7);
+  --accent: #0ea5e9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, #1d2341, var(--background));
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+  z-index: 0;
+}
+
+.blog-content {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.blog-content h2,
+.blog-content h3 {
+  color: var(--foreground);
+  font-weight: 600;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.blog-content pre {
+  background: #0f172a;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  color: #e2e8f0;
+  overflow-x: auto;
+  font-size: 0.95rem;
+}
+
+.blog-content code {
+  background: rgba(148, 163, 184, 0.12);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.blog-content ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
