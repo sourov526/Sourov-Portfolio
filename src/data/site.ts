@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "Sourov",
-  role: "Full-Stack Software Engineer",
+  name: "Md. Sourov Mia",
+  role: "Software Engineer",
   heroTitle: "I design, ship, and scale delightful developer experiences.",
   heroDescription:
     "I move ideas from whiteboard to production with a product-first mindset, pairing robust TypeScript backends with intuitive, animated interfaces.",

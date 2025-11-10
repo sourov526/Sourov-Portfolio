@@ -1,8 +1,8 @@
 import { siteConfig } from "@/data/site";
+import { Facebook, Github, Linkedin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "./animated-section";
-import { Facebook, Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const contactActions = [
   {
@@ -47,7 +47,7 @@ export function Hero() {
           <h1 className="text-4xl font-semibold text-white md:text-5xl">
             {siteConfig.name}
           </h1>
-          <p className="mt-2 text-lg font-semibold uppercase tracking-[0.3em] text-sky-300">
+          <p className="mt-2 text-lg font-semibold text-sky-300">
             {siteConfig.role}
           </p>
         </div>
