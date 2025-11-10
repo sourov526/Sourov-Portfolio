@@ -69,3 +69,65 @@ body {
   list-style: disc;
   margin-left: 1.5rem;
 }
+
+.wave-button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  animation: float 4s ease-in-out infinite;
+}
+
+.wave-button::after {
+  content: "";
+  position: absolute;
+  inset: -150% 0 0 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.35) 0%, transparent 70%);
+  animation: wave 3s linear infinite;
+  opacity: 0.6;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-150%) translateY(0);
+  }
+  50% {
+    transform: translateX(0) translateY(-8%);
+  }
+  100% {
+    transform: translateX(150%) translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -6px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.contact-button {
+  animation: drift 3.2s ease-in-out infinite;
+}
+
+.contact-button:nth-child(2n) {
+  animation-delay: 0.3s;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

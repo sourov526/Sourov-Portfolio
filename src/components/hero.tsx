@@ -2,6 +2,38 @@ import { siteConfig } from "@/data/site";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "./animated-section";
+import { Facebook, Github, Linkedin, Mail, Phone } from "lucide-react";
+
+const contactActions = [
+  {
+    label: "GitHub",
+    icon: Github,
+    href: siteConfig.github,
+    external: true,
+  },
+  {
+    label: "LinkedIn",
+    icon: Linkedin,
+    href: siteConfig.linkedin,
+    external: true,
+  },
+  {
+    label: "Facebook",
+    icon: Facebook,
+    href: siteConfig.facebook,
+    external: true,
+  },
+  {
+    label: "Email",
+    icon: Mail,
+    href: siteConfig.email,
+  },
+  {
+    label: "Call",
+    icon: Phone,
+    href: `tel:${siteConfig.phone}`,
+  },
+];
 
 export function Hero() {
   return (
@@ -19,7 +51,7 @@ export function Hero() {
             {siteConfig.role}
           </p>
         </div>
-        <p className="text-lg text-slate-200 md:text-xl">
+        <p className="text-justify text-lg text-slate-200 md:text-xl">
           Full-stack engineer with 2+ years of remote experience delivering
           scalable, high-performance web applications for Japanese and Indian
           companies. Proficient in modern tech stack including React,
@@ -28,10 +60,26 @@ export function Hero() {
           on building clean, user-centric applications that bridge seamless
           frontend experiences with efficient server-side architecture.
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          {contactActions.map(({ label, icon: Icon, href, external }) => (
+            <a
+              key={label}
+              href={href}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noreferrer" : undefined}
+              className="contact-button flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-white/60 hover:bg-white/5"
+            >
+              <Icon className="h-4 w-4" />
+              {label}
+            </a>
+          ))}
+        </div>
+        <div className="flex flex-wrap justify-center gap-4">
           <Link
             href="/resume-sourov.pdf"
-            className="inline-flex items-center justify-center rounded-full bg-sky-400/90 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-sky-300"
+            target="_blank"
+            rel="noreferrer"
+            className="wave-button inline-flex items-center justify-center rounded-full bg-sky-400/90 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-sky-300"
           >
             Download résumé
           </Link>

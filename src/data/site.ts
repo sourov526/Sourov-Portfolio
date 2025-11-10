@@ -6,9 +6,11 @@ export const siteConfig = {
     "I move ideas from whiteboard to production with a product-first mindset, pairing robust TypeScript backends with intuitive, animated interfaces.",
   location: "Remote • Dhaka, Bangladesh",
   availability: "Open to senior engineering and tech lead roles",
-  email: "mailto:hello@sourov.dev",
-  github: "https://github.com/sourovdey",
-  linkedin: "https://www.linkedin.com/in/sourovdey",
+  email: "mailto:sourovsh533@gmail.com",
+  phone: "+8801971269934",
+  github: "https://github.com/sourov526",
+  linkedin: "https://www.linkedin.com/in/sh-sourov-0322111a4/",
+  facebook: "https://web.facebook.com/shsourov11/",
 };
 
 export const primaryNav = [
