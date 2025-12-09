@@ -1,5 +1,5 @@
 import { siteConfig } from "@/data/site";
-import { Facebook, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Facebook, Github, Linkedin, Mail, MessageCircle, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "./animated-section";
@@ -27,6 +27,12 @@ const contactActions = [
     label: "Email",
     icon: Mail,
     href: siteConfig.email,
+  },
+  {
+    label: "WhatsApp",
+    icon: MessageCircle,
+    href: `https://wa.me/${siteConfig.phone.replace(/\D/g, "")}`,
+    external: true,
   },
   {
     label: "Call",

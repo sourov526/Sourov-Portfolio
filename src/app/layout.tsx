@@ -44,7 +44,7 @@ export default function RootLayout({
             <SiteHeader />
             <div className="px-4 pt-6 md:px-8 md:pt-10">
               <main className="space-y-8">{children}</main>
-              <footer className="mt-12 border-t border-white/10 pt-6 text-sm text-slate-400 md:mt-16">
+              <footer className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-slate-400 md:mt-16">
                 © {new Date().getFullYear()} {siteConfig.name}. Built with Next.js,
                 Tailwind, and a lot of curiosity.
               </footer>
