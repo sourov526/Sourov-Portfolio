@@ -68,7 +68,7 @@ export function Hero() {
               href={href}
               target={external ? "_blank" : undefined}
               rel={external ? "noreferrer" : undefined}
-              className="contact-button flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-white/60 hover:bg-white/5"
+              className="contact-button flex transform items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:-translate-y-1 hover:scale-105 hover:border-white/60 hover:bg-white/5"
             >
               <Icon className="h-4 w-4" />
               {label}
@@ -87,14 +87,14 @@ export function Hero() {
         </div>
       </div>
       <div className="flex items-center justify-center md:w-1/3">
-        <div className="flex h-full w-full items-center justify-center">
+        <div className="group relative flex h-full w-full items-center justify-center">
           <Image
             src="/profile.jpg"
             alt={siteConfig.name}
             width={320}
             height={320}
             priority
-            className="h-40 w-40 rounded-full border border-white/20 object-cover shadow-lg ring-4 ring-white/10 sm:h-52 sm:w-52 md:h-[90%] md:w-[90%] md:max-w-sm"
+            className="h-40 w-40 rounded-full border border-white/20 object-cover shadow-2xl shadow-sky-900/60 ring-4 ring-white/10 transition duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105 sm:h-52 sm:w-52 md:h-[90%] md:w-[90%] md:max-w-sm"
           />
         </div>
       </div>
