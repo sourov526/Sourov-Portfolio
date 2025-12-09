@@ -1,4 +1,4 @@
-import { Facebook, Github, Linkedin, Mail, Phone, MessageCircle } from "lucide-react";
+import { Facebook, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/data/site";
 
 const contacts = [

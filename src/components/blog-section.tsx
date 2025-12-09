@@ -10,15 +10,7 @@ type BlogSectionProps = {
 
 export function BlogSection({ posts }: BlogSectionProps) {
   return (
-    <AnimatedSection
-      id="blog"
-      delay={0.25}
-      className="relative overflow-hidden bg-gradient-to-br from-slate-900/70 via-slate-900/60 to-slate-800/50"
-    >
-      <div className="pointer-events-none absolute inset-0 opacity-60">
-        <div className="absolute -left-8 top-8 h-48 w-48 rounded-full bg-emerald-400/20 blur-3xl" />
-        <div className="absolute bottom-0 right-8 h-56 w-56 rounded-full bg-sky-400/15 blur-3xl" />
-      </div>
+    <AnimatedSection id="blog" delay={0.25} className="relative overflow-hidden bg-transparent">
       <div className="relative flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <SectionHeading title="Blog" />
         <Link

@@ -78,4 +78,5 @@ New posts automatically appear on the home page (latest four) and on `/blog`, an
 - ✅ Framer Motion animations (`AnimatedSection` wrappers)
 
 Feel free to extend the site with analytics, CMS data sources, or deployment workflows. Open an issue or reach out if you need help evolving the portfolio further.
+
 # Sourov-Portfolio
