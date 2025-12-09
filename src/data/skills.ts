@@ -6,7 +6,7 @@ export type SkillCategory = {
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Front-End Craft",
+    title: "Front-End",
     summary:
       "UI engineering across React, Next.js, and Vue with production-grade design systems.",
     items: [
@@ -29,9 +29,8 @@ export const skillCategories: SkillCategory[] = [
       "Node.js",
       "tRPC",
       "Python",
-      "Django",
+      "FastAPI",
       "Django REST Framework",
-      "Flask",
       "PostgreSQL",
       "MySQL",
     ],
@@ -41,14 +40,15 @@ export const skillCategories: SkillCategory[] = [
     summary:
       "RAG systems, vector stores, and ML tooling for intelligent automation and assistants.",
     items: [
+      "RAG",
       "Machine Learning",
-      "Deep Learning",
-      "NLP",
       "Generative AI",
       "LLMs",
       "Vector Databases",
       "Neo4j",
       "ChromaDB",
+      "LangChain",
+      "Pandas",
     ],
   },
   {
@@ -67,6 +67,13 @@ export const skillCategories: SkillCategory[] = [
     title: "Ops & Collaboration",
     summary:
       "Effective communication, planning, and delivery rituals with distributed teams.",
-    items: ["Jira", "Confluence", "Windows", "Ubuntu", "English Communication"],
+    items: [
+      "Jira",
+      "Confluence",
+      "Windows",
+      "Ubuntu",
+      "Mac",
+      "English & Bangla Communication",
+    ],
   },
 ];
