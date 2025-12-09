@@ -4,11 +4,19 @@ import { SectionHeading } from "./section-heading";
 
 export function ExperienceSection() {
   return (
-    <AnimatedSection id="experience" delay={0.18} className="relative overflow-hidden bg-transparent">
+    <AnimatedSection
+      id="experience"
+      delay={0.18}
+      className="relative overflow-hidden bg-gradient-to-br from-slate-900/70 via-slate-900/60 to-slate-800/50"
+    >
+      <div className="pointer-events-none absolute inset-0 opacity-60">
+        <div className="absolute -left-10 top-10 h-48 w-48 rounded-full bg-sky-500/20 blur-3xl" />
+        <div className="absolute right-10 bottom-0 h-56 w-56 rounded-full bg-indigo-500/20 blur-3xl" />
+      </div>
       <SectionHeading title="Experience" className="text-center" />
 
       <ul className="relative mt-10 space-y-8">
-        <div className="pointer-events-none absolute left-4 top-0 h-full w-px bg-white/30" />
+        <div className="pointer-events-none absolute left-4 top-0 h-full w-px bg-gradient-to-b from-sky-400/50 via-white/15 to-transparent" />
         {experiences.map((experience) => (
           <li key={experience.company} className="relative pl-10">
             <span className="absolute left-[7px] top-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-400 ring-4 ring-slate-900/80 ring-offset-2 ring-offset-slate-800" />
