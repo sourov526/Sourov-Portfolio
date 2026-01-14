@@ -7,12 +7,8 @@ export function ExperienceSection() {
     <AnimatedSection
       id="experience"
       delay={0.18}
-      className="relative overflow-hidden bg-gradient-to-br from-slate-900/70 via-slate-900/60 to-slate-800/50"
+      className="relative overflow-hidden"
     >
-      <div className="pointer-events-none absolute inset-0 opacity-60">
-        <div className="absolute -left-10 top-10 h-48 w-48 rounded-full bg-sky-500/20 blur-3xl" />
-        <div className="absolute right-10 bottom-0 h-56 w-56 rounded-full bg-indigo-500/20 blur-3xl" />
-      </div>
       <SectionHeading title="Experience" className="text-center" />
 
       <ul className="relative mt-10 space-y-8">
