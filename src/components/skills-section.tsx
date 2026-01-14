@@ -22,7 +22,7 @@ const defaultPercent = 90;
 export function SkillsSection() {
   return (
     <AnimatedSection id="skills" delay={0.1}>
-      <SectionHeading title="Skills" className="text-center" />
+      <SectionHeading title="SKILLS" className="text-center" />
       <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         {skillCategories.map((category, index) => {
           const percent = categoryPercentages[category.title] ?? defaultPercent;

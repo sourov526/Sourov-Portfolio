@@ -1,7 +1,6 @@
 import { AnimatedSection } from "@/components/animated-section";
 import { SectionHeading } from "@/components/section-heading";
 import { skillCategories } from "@/data/skills";
-import { Metadata } from "next";
 
 const gradientClasses = [
   "from-emerald-400 via-emerald-300 to-teal-400",
@@ -20,17 +19,11 @@ const categoryPercentages: Record<string, number> = {
 
 const defaultPercent = 90;
 
-export const metadata: Metadata = {
-  title: "Skills",
-  description:
-    "A closer look at the front-end, back-end, AI, and delivery skills I apply to ship reliable products.",
-};
-
 export default function SkillsPage() {
   return (
     <div className="space-y-8">
       <AnimatedSection className="bg-gradient-to-br from-slate-900/80 via-slate-900/50 to-slate-800/40">
-        <SectionHeading title="Skills" className="text-center" />
+        <SectionHeading title="Skills djfkdj" className="text-center" />
       </AnimatedSection>
 
       <AnimatedSection>

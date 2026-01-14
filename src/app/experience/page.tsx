@@ -1,18 +1,18 @@
-import { Metadata } from "next";
-import { experiences } from "@/data/experience";
 import { AnimatedSection } from "@/components/animated-section";
 import { SectionHeading } from "@/components/section-heading";
+import { experiences } from "@/data/experience";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Experience | Sourov Dey",
+  title: "Experience",
   description:
     "Highlights from Brand Cloud Inc. and Confidence Group that shaped my full-stack and DevOps perspective.",
 };
 
 export default function ExperiencePage() {
   return (
-    <div className="space-y-8">
-      <AnimatedSection className="bg-gradient-to-r from-slate-900/70 via-slate-900/40 to-slate-800/40">
+    <div className="">
+      <AnimatedSection className="">
         <SectionHeading
           eyebrow="Experience"
           title="Turning high-stakes roadmaps into shipped software"
