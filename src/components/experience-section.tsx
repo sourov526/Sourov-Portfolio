@@ -4,11 +4,7 @@ import { SectionHeading } from "./section-heading";
 
 export function ExperienceSection() {
   return (
-    <AnimatedSection
-      id="experience"
-      delay={0.18}
-      className="relative overflow-hidden"
-    >
+    <AnimatedSection id="experience" delay={0.18}>
       <SectionHeading title="Experience" className="text-center" />
 
       <ul className="relative mt-10 space-y-8">
@@ -35,8 +31,8 @@ export function ExperienceSection() {
                       {experience.company}
                     </p>
                     <p className="text-sm text-slate-300">
-                      Partnering with cross-functional teams to deliver resilient
-                      systems and faster feedback loops.
+                      Partnering with cross-functional teams to deliver
+                      resilient systems and faster feedback loops.
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2">

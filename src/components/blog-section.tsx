@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { BlogMeta } from "@/lib/blog";
+import Link from "next/link";
 import { AnimatedSection } from "./animated-section";
 import { BlogCard } from "./blog-card";
 import { SectionHeading } from "./section-heading";
@@ -15,11 +15,11 @@ export function BlogSection({ posts }: BlogSectionProps) {
       delay={0.25}
       className="relative overflow-hidden"
     >
-      <div className="relative flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-        <SectionHeading title="Blog" />
+      <div className="relative flex flex-col items-center gap-6">
+        <SectionHeading title="Blogs" className="text-center" />
         <Link
           href="/blog"
-          className="text-sm font-semibold text-emerald-300 transition hover:text-emerald-200"
+          className="text-sm font-semibold text-emerald-300 transition hover:text-emerald-200 md:absolute md:bottom-0 md:right-0"
         >
           View all articles →
         </Link>
