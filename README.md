@@ -48,6 +48,18 @@ app/
 - **Projects grid**: edit the array in `src/data/projects.ts`. Each project accepts `name`, `description`, `techStack`, and `link`.
 - **Résumé download**: replace `public/resume-sourov.pdf` with a new file using the same name for instant updates.
 
+## Contact Form Email Setup
+
+Create a `.env.local` file inside `app/` with your SMTP credentials:
+
+```
+SMTP_HOST=your.smtp.host
+SMTP_PORT=587
+SMTP_USER=your_smtp_username
+SMTP_PASS=your_smtp_password
+CONTACT_TO=your@email.com
+```
+
 ## Adding or Editing Blog Posts
 
 Blog posts live in `content/blog` as Markdown files. Each file must contain frontmatter:

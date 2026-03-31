@@ -1,4 +1,5 @@
 import { ContactLinks } from "./contact-links";
+import { ContactForm } from "./contact-form";
 import { AnimatedSection } from "./animated-section";
 import { SectionHeading } from "./section-heading";
 import { siteConfig } from "@/data/site";
@@ -15,7 +16,8 @@ export function ContactSection() {
         Ready to collaborate on AI-powered products, ship features faster, or
         tighten delivery workflows? Let’s connect.
       </p>
-      <div className="relative mt-8">
+      <div className="relative mt-10 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+        <ContactForm />
         <ContactLinks />
       </div>
       <p className="relative mt-6 text-center text-sm text-slate-300">
