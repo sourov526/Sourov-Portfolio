@@ -18,6 +18,5 @@ export const primaryNav = [
   { label: "Skills", href: "/#skills" },
   { label: "Experience", href: "/#experience" },
   { label: "Projects", href: "/#projects" },
-  { label: "Blogs", href: "/#blog" },
   { label: "Contact", href: "/#contact" },
 ];
