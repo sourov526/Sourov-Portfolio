@@ -37,40 +37,6 @@ body {
   z-index: 0;
 }
 
-.blog-content {
-  color: var(--muted);
-  font-size: 1.05rem;
-  line-height: 1.9;
-}
-
-.blog-content h2,
-.blog-content h3 {
-  color: var(--foreground);
-  font-weight: 600;
-  margin-top: 2.2rem;
-  margin-bottom: 0.8rem;
-}
-
-.blog-content pre {
-  background: #0f172a;
-  border-radius: 1rem;
-  padding: 1.25rem;
-  color: #e2e8f0;
-  overflow-x: auto;
-  font-size: 0.95rem;
-}
-
-.blog-content code {
-  background: rgba(148, 163, 184, 0.12);
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.4rem;
-}
-
-.blog-content ul {
-  list-style: disc;
-  margin-left: 1.5rem;
-}
-
 .wave-button {
   position: relative;
   overflow: hidden;
