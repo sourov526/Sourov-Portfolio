@@ -12,19 +12,19 @@ export const experiences: Experience[] = [
   {
     company: "Brand Cloud Inc. (Japan-based)",
     role: "Software Engineer (Full Stack)",
-    location: "Dhaka, Bangladesh · Remote collaboration",
+    location: "Dhaka, Bangladesh",
     start: "Jun 2023",
     end: "Present",
     focus: [
+      "Full-stack web platform",
       "Automation sector",
       "AI/RAG initiatives",
-      "Full-stack web platform",
     ],
     impact: [
       "Owns Jira tickets end-to-end, communicating progress daily and defending timelines.",
-      "Builds Python automation bots that ingest partner data, verify outputs across S3 and DynamoDB, and self-heal failures through targeted debugging.",
       "Designed a ChatGPT-inspired Retrieval-Augmented Generation system using LLMs, ChromaDB, and Neo4j to deliver contextual answers to enterprise users.",
-      "Implements full-stack RAG applications with React/Next.js, Tailwind, and TypeScript on the front end plus tRPC, Prisma, PostgreSQL, and vector stores on the backend.",
+      "Implements full-stack RAG web applications with React/Next.js, Tailwind, and TypeScript on the front end plus tRPC, Prisma, PostgreSQL, and vector stores on the backend.",
+      "Builds Python automation bots that ingest partner data, verify outputs across S3 and DynamoDB, and self-heal failures through targeted debugging.",
     ],
   },
   {

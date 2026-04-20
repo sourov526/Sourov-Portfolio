@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 import { Project } from "@/data/projects";
 
 type ProjectCardProps = {
@@ -44,16 +43,6 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           </span>
         ))}
       </div>
-      <Link
-        href={project.link}
-        target="_blank"
-        rel="noreferrer"
-        prefetch={false}
-        className="relative mt-5 inline-flex items-center gap-2 text-sm font-semibold text-sky-200 transition hover:text-sky-100"
-      >
-        View project
-        <ArrowUpRight className="h-4 w-4" />
-      </Link>
     </li>
   );
 }
