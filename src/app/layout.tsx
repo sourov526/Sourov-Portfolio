@@ -40,7 +40,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <span className="noise-overlay" aria-hidden />
-          <div className="relative min-h-screen pb-12 md:pb-20">
+          <div className="relative min-h-screen pb-6 md:pb-10">
             <SiteHeader />
             <div className="px-4 pt-6 md:px-8 md:pt-10">
               <main className="space-y-8">{children}</main>

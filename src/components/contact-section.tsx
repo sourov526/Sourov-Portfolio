@@ -2,41 +2,18 @@ import { ContactLinks } from "./contact-links";
 import { ContactForm } from "./contact-form";
 import { AnimatedSection } from "./animated-section";
 import { SectionHeading } from "./section-heading";
-import { siteConfig } from "@/data/site";
 
 export function ContactSection() {
   return (
-    <AnimatedSection
-      id="contact"
-      delay={0.35}
-      className="relative overflow-hidden"
-    >
+    <AnimatedSection id="contact" delay={0.35}>
       <SectionHeading title="Contact" className="text-center" />
-      <p className="mt-4 text-center text-lg text-slate-200">
-        Ready to collaborate on AI-powered products, ship features faster, or
-        tighten delivery workflows? Let’s connect.
+      <p className="mt-3 text-center text-slate-300">
+        Have a project in mind? Send a message and I will get back to you.
       </p>
-      <div className="relative mt-10 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+      <div className="mt-8 grid gap-6 lg:grid-cols-2 lg:items-start">
         <ContactForm />
         <ContactLinks />
       </div>
-      <p className="relative mt-6 text-center text-sm text-slate-300">
-        Prefer async? Save{" "}
-        <a
-          href="/resume-sourov.pdf"
-          className="font-semibold text-sky-300 underline-offset-2 hover:text-sky-200 hover:underline"
-        >
-          my résumé
-        </a>{" "}
-        or reach me directly at{" "}
-        <a
-          href={siteConfig.email}
-          className="font-semibold text-sky-300 underline-offset-2 hover:text-sky-200 hover:underline"
-        >
-          {siteConfig.email.replace("mailto:", "")}
-        </a>
-        .
-      </p>
     </AnimatedSection>
   );
 }

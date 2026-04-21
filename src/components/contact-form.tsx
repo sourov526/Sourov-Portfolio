@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import { SendHorizontal } from "lucide-react";
+import { useMemo, useState } from "react";
 
 type FormState = {
   name: string;
@@ -73,7 +73,7 @@ export function ContactForm() {
             Tell me about your project
           </h3>
           <p className="mt-2 text-sm text-slate-300">
-            I reply within 24–48 hours. Share timelines, goals, or anything
+            I reply within 01–48 hours. Share timelines, goals, or anything
             helpful.
           </p>
         </div>

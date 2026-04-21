@@ -44,6 +44,7 @@ export function ContactLinks() {
             : kind === "email"
               ? href.replace("mailto:", "")
               : href.replace("https://", "");
+        const showDetail = label !== "GitHub" && label !== "LinkedIn" && label !== "Facebook";
 
         const isExternal = kind === "external";
 
@@ -63,9 +64,11 @@ export function ContactLinks() {
                 <p className="text-xs font-semibold text-sky-200">
                   {label}
                 </p>
-                <p className="break-all text-base font-semibold text-white">
-                  {display}
-                </p>
+                {showDetail ? (
+                  <p className="break-all text-base font-semibold text-white">
+                    {display}
+                  </p>
+                ) : null}
               </div>
             </a>
           </li>
