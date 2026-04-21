@@ -53,13 +53,14 @@ export function Hero() {
           </p>
         </div>
         <p className="text-justify text-lg text-slate-200 md:text-xl">
-          Full-stack engineer with 2+ years of remote experience delivering
-          scalable, high-performance web applications for Japanese and Indian
-          companies. Proficient in modern tech stack including React,
-          TypeScript, and Next.js for frontend development, complemented by
-          FastAPI and Next.js API routes for robust backend solutions. Focused
-          on building clean, user-centric applications that bridge seamless
-          frontend experiences with efficient server-side architecture.
+          Full-stack engineer with 3 years of experience building scalable,
+          high-performance web applications for companies in Japan and
+          Bangladesh. Proficient in modern technologies including JavaScript,
+          React, TypeScript, and Next.js for frontend development, with strong
+          backend experience in tRPC, Prisma, PostgreSQL, Python, Django, and
+          Next.js API routes. Skilled at creating clean, user-focused
+          applications that combine seamless frontend experiences with
+          efficient, well-structured backend architecture.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           {contactActions.map(({ label, icon: Icon, href, external }) => (
@@ -77,7 +78,7 @@ export function Hero() {
         </div>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
-            href="/resume-sourov.pdf"
+            href="/Md-Sourov_Resume_US_format.pdf"
             target="_blank"
             rel="noreferrer"
             className="wave-button inline-flex items-center justify-center rounded-full bg-sky-400/90 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-sky-300"
@@ -89,7 +90,7 @@ export function Hero() {
       <div className="flex items-center justify-center md:w-1/3">
         <div className="group relative flex h-full w-full items-center justify-center">
           <Image
-            src="/profile.jpg"
+            src="/sourov.jpeg"
             alt={siteConfig.name}
             width={320}
             height={320}
