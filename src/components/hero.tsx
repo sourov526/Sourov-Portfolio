@@ -1,46 +1,13 @@
 import { siteConfig } from "@/data/site";
-import { Facebook, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
+import { contactActions } from "@/data/contacts";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "./animated-section";
-
-const contactActions = [
-  {
-    label: "GitHub",
-    icon: Github,
-    href: siteConfig.github,
-    external: true,
-  },
-  {
-    label: "LinkedIn",
-    icon: Linkedin,
-    href: siteConfig.linkedin,
-    external: true,
-  },
-  {
-    label: "Facebook",
-    icon: Facebook,
-    href: siteConfig.facebook,
-    external: true,
-  },
-  {
-    label: "Email",
-    icon: Mail,
-    href: siteConfig.email,
-  },
-  {
-    label: "WhatsApp",
-    icon: MessageCircle,
-    href: `https://wa.me/${siteConfig.phone.replace(/\D/g, "")}`,
-    external: true,
-  },
-];
 
 export function Hero() {
   return (
     <AnimatedSection
       id="home"
-      unstyled
       className="flex flex-col gap-8 py-10 md:min-h-[520px] md:flex-row md:items-center md:py-16"
     >
       <div className="flex flex-1 flex-col justify-center gap-6">
