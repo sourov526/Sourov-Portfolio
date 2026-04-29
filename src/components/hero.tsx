@@ -11,7 +11,7 @@ export function Hero() {
       className="flex flex-col gap-8 py-10 md:min-h-[520px] md:flex-row md:items-center md:py-16"
     >
       <div className="flex flex-1 flex-col justify-center gap-6">
-        <div>
+        <div className="text-center md:text-left">
           <h1 className="text-4xl font-semibold text-white md:text-5xl">
             {siteConfig.name}
           </h1>
