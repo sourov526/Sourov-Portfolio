@@ -22,8 +22,7 @@ export function AnimatedSection({
       id={id}
       className={clsx("w-full scroll-mt-28 md:scroll-mt-36", className)}
       initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 1 }}
-      viewport={{ once: true, amount: 0.3 }}
+      animate={{ opacity: 1, y: 1 }}
       transition={{ duration: 0.6, delay }}
     >
       {children}
