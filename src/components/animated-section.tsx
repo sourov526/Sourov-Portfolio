@@ -9,7 +9,6 @@ type AnimatedSectionProps = {
   className?: string;
   delay?: number;
   id?: string;
-  unstyled?: boolean;
 };
 
 export function AnimatedSection({
