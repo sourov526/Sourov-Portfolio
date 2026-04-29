@@ -19,6 +19,16 @@ export function Hero() {
             {siteConfig.role}
           </p>
         </div>
+        <div className="flex items-center justify-center md:hidden">
+          <Image
+            src="/sourov.jpeg"
+            alt={siteConfig.name}
+            width={320}
+            height={320}
+            priority
+            className="h-40 w-40 rounded-full border border-white/20 object-cover shadow-2xl shadow-sky-900/60 ring-4 ring-white/10 transition duration-500 ease-out sm:h-52 sm:w-52"
+          />
+        </div>
         <p className="text-justify text-lg text-slate-200 md:text-xl">
           Full-stack engineer with 3 years of experience building scalable,
           high-performance web applications for companies in Japan and
@@ -54,7 +64,7 @@ export function Hero() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-center md:w-1/3">
+      <div className="hidden items-center justify-center md:flex md:w-1/3">
         <div className="group relative flex h-full w-full items-center justify-center">
           <Image
             src="/sourov.jpeg"
