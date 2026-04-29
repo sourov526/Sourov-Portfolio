@@ -53,13 +53,13 @@ export function SiteHeader() {
         id="mobile-nav"
         className={`${isMenuOpen ? "max-h-96 pb-4 opacity-100" : "max-h-0 opacity-0"} overflow-hidden px-4 transition-all duration-200 md:hidden`}
       >
-        <nav className="grid gap-2 rounded-xl border border-white/10 bg-slate-900/60 p-2">
+        <nav className="grid justify-items-center gap-2 rounded-xl border border-white/10 bg-slate-900/60 p-2 text-center">
           {primaryNav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={handleCloseMenu}
-              className="rounded-lg px-4 py-2 text-base font-semibold text-slate-200 transition hover:bg-white/10 hover:text-white"
+              className="w-full rounded-lg px-4 py-2 text-center text-base font-semibold text-slate-200 transition hover:bg-white/10 hover:text-white"
             >
               {item.label}
             </Link>
