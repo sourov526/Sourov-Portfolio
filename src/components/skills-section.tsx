@@ -13,8 +13,8 @@ const gradientClasses = [
 
 const categoryPercentages: Record<string, number> = {
   "Front-End": 95,
-  "Ops & Collaboration": 98,
-  "DevOps & Deployment": 88,
+  "Ops & Collaboration": 95,
+  "DevOps & Deployment": 92,
 };
 
 const defaultPercent = 90;
