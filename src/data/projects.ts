@@ -13,6 +13,7 @@ export const projects: Project[] = [
       "React",
       "Next.js",
       "TypeScript",
+      "Python"
       "Tailwind CSS",
       "tRPC",
       "PostgreSQL",
