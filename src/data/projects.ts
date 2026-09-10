@@ -27,13 +27,13 @@ export const projects: Project[] = [
     name: "BC-Corporate CMS",
     description:
       "Built a multilingual CMS and admin platform for content, media, recruitment, and publishing workflows with SEO and role-based controls.",
-    techStack: ["React", "Next.js", "TypeScript", "Node.js", "tRPC", "Cloudflare", "Shell", "Git"],
+    techStack: ["React", "Next.js", "TypeScript", "Node.js", "Cloudflare", "Shell", "Git"],
   },
   {
     name: "Hobe Energy",
     description:
       "Built a multilingual CMS and admin platform for Hobe Energy with content/media/recruitment workflows, publishing controls, and Cloudflare-based deployment pipelines.",
-    techStack: ["React", "Next.js", "TypeScript", "Node.js", "tRPC", "Cloudflare", "Shell", "Git"],
+    techStack: ["React", "Next.js", "TypeScript", "Node.js", "Cloudflare", "Shell", "Git"],
   },
   {
     name: "MiME CONNECT",
