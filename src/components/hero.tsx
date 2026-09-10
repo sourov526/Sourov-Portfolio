@@ -30,14 +30,12 @@ export function Hero() {
           />
         </div>
         <p className="text-justify text-lg text-slate-200 md:text-xl">
-          Full-stack engineer with 3 years of experience building scalable,
-          high-performance web applications for companies in Japan and
-          Bangladesh. Proficient in modern technologies including JavaScript,
-          React, TypeScript, and Next.js for frontend development, with strong
-          backend experience in tRPC, Prisma, PostgreSQL, Python, Django, and
-          Next.js API routes. Skilled at creating clean, user-focused
-          applications that combine seamless frontend experiences with
-          efficient, well-structured backend architecture.
+          Full-stack Engineer with 3.5 years of experience building, deploying, and maintaining scalable, 
+          high-performance web applications for companies in Japan and Bangladesh. Proficient in JavaScript, 
+          TypeScript, React, and Next.js for frontend development, with strong backend experience in Python, 
+          Django, Node.js, tRPC, Prisma, PostgreSQL, and Next.js API Routes. Experienced in DevOps practices 
+          and tools, including Docker, Kubernetes, AWS, and CI/CD pipelines. Skilled at delivering clean, 
+          user-focused applications supported by efficient backend architecture and reliable deployment workflows.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           {contactActions.map(({ label, icon: Icon, href, external }) => (
