@@ -50,7 +50,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "DevOps & Deployment",
-    items: ["Docker", "Git", "GitHub", "Bitbucket", "Vercel"],
+    items: ["Docker", "Docker Swarm", "Kubernetes", "Terraform", "CICD(Github actions & Jenkins)" "Git", "GitHub", "Bitbucket", "Vercel"],
   },
   {
     title: "Ops & Collaboration",
